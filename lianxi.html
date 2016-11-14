@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	//弧度转角度
+	// console.log(Math.asin(1)*180/Math.PI);
+	// 弧度转角度 角度转弧度
+	// console.log(Math.sin(90*Math.PI/180));
+	// console.log(Math.sin(270*Math.PI/180));
+	// // 在atan中输入两个值
+	//  // console.log(Math.atan2())  //输入比例
+	// console.log(Math.atan2(y,x)*180/Math.PI);    //输入两条边
+ window.onload = function(){
+ 	var init = 0;//定义一个初始角度
+ 	var speed = 10;
+ 	var box = ducument.getElementsByClassName("box")[0];
+ 	setInterval(function(){
+ 		init+=speed;
+ 		box.style.transform = "translate("+100*Math.sin(init*Math.PI/180)+")";
+
+ 	},50)
+ }
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
